@@ -79,7 +79,7 @@ function init()
     });
 
     let mesh;
-    new GLTFLoader().load("../assets/statue.glb",
+    new GLTFLoader().load("../assets/tren.glb",
         function ( gltf ) {
             mesh = gltf.scene.children[0];
             mesh.position.set(0,0,0);

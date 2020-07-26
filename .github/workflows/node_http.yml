@@ -25,4 +25,4 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: npm ci
-      - run: node src/server.js --experimental-modules
+      - run: pm2 start src/server.js --name node-app

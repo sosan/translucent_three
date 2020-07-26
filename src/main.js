@@ -1,11 +1,11 @@
-import * as THREE from  "./programs/three.module.js"; //"../node_modules/three/build/three.module.js";
-import { OrbitControls } from "./programs/OrbitControls.js";  // "../node_modules/three/examples/jsm/controls/OrbitControls.js";
-import { DoubleDepthBuffer } from "./programs/doubleDepthBuffer.js";
-import { Blit } from "./programs/blit.js";
-import { Skybox } from "./programs/skybox.js";
-import { SSRTGlass } from "./programs/ssrtGlass.js";
-import { GLTFLoader } from  "./programs/GLTFLoader.js";  //'../node_modules/three/examples/jsm/loaders/GLTFLoader.js';
-import * as dat   from  "./programs/dat.gui.module.js"; //"../node_modules/dat.gui/build/dat.gui.module.js";
+import * as THREE from "programs/three.module.js";
+import { OrbitControls } from "programs/OrbitControls.js";
+import { DoubleDepthBuffer } from "programs/doubleDepthBuffer.js";
+import { Blit } from "programs/blit.js";
+import { Skybox } from "programs/skybox.js";
+import { SSRTGlass } from "programs/ssrtGlass.js";
+import { GLTFLoader } from  "programs/GLTFLoader.js";
+import * as dat from "programs/dat.gui.module.js";
 
 window.addEventListener("load", init);
 

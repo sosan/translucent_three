@@ -79,7 +79,7 @@ function init()
     });
 
     let mesh;
-    new GLTFLoader().load("../assets/bailarina.fbx",
+    new GLTFLoader().load("../assets/camara.glb",
         function ( gltf ) {
             mesh = gltf.scene.children[0];
             mesh.position.set(0,0,0);

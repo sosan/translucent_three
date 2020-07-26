@@ -2,7 +2,6 @@
 
 # Modelo con shader con refraccion translucido en Three.js
 
-Link:
-https://sosan.github.io/translucent_three/src/
+Link: [Muestra](src/index.html)
 
 ![Imagen](imagen.png?raw=true "Imagen")

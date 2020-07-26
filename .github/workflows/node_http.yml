@@ -24,6 +24,5 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-      - run: |
-          npm ci
-          node src/server.js --experimental-modules
+      - run: npm ci
+      - run: node src/server.js --experimental-modules

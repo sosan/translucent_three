@@ -26,12 +26,11 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - run: npm ci
       - run: npm install pm2 -g
-      steps:
-        - uses: actions/checkout@master
-        - name: copy file
-          uses: canastro/copy-file-action@master
-          with:
-            source: "node_modules/three/build/three.module.js, node_modules/three/examples/jsm/controls/OrbitControls.js, node_modules/three/examples/jsm/libs/dat.gui.module.js"
-            target: "src/programs"
+      - uses: actions/checkout@master
+      - name: copy file
+        uses: canastro/copy-file-action@master
+        with:
+          source: "node_modules/three/build/three.module.js, node_modules/three/examples/jsm/controls/OrbitControls.js, node_modules/three/examples/jsm/libs/dat.gui.module.js"
+          target: "src/programs"
       - run: pm2 start src/server.js --name node-app
 

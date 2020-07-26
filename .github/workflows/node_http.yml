@@ -18,5 +18,14 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: npm install --save
-    - run: node src/server.js
+#    - run: npm install
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: deploy node app
+      - with:
+          script: |
+            cd ~/src
+            npm install --production
+            node src/server.js
+#            pm2 restart node-app

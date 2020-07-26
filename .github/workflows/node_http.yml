@@ -25,11 +25,11 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: npm ci
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - name: deploy node app
-      - with:
-          script: |
-            cd ~/src
-            node server.js
+#  deploy:
+#    runs-on: ubuntu-latest
+#    steps:
+#      - name: deploy node app
+#      - with:
+#          script: |
+#            cd ~/src
+#            node server.js

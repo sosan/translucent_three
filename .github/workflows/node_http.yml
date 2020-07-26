@@ -24,13 +24,6 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-      - run: npm ci
-      - run: node src/server.js --experimental-modules
-#  deploy:
-#    runs-on: ubuntu-latest
-#    steps:
-#      - name: deploy node app
-#      - with:
-#          script: |
-#            cd ~/src
-#            node server.js
+      - run: |
+          npm ci
+          node src/server.js --experimental-modules

@@ -26,6 +26,4 @@ jobs:
       - with:
           script: |
             cd ~/src
-#            npm install --production
             node server.js
-#            pm2 restart node-app

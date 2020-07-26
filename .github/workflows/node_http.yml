@@ -25,9 +25,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: npm ci
-      - script: |
-          cd ~/src
-          node server.js --experimental-modules
+      - run: node ~/src/server.js --experimental-modules
 #  deploy:
 #    runs-on: ubuntu-latest
 #    steps:

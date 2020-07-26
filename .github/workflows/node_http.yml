@@ -30,19 +30,19 @@ jobs:
       - name: copy file three module
         uses: canastro/copy-file-action@master
         with:
-          source: "node_modules/three/build/three.module.js"
-          target: "src/programs"
+          source: "~/node_modules/three/build/three.module.js"
+          target: "~/src/programs"
       - name: copy file orbitcontrol
         uses: canastro/copy-file-action@master
         with:
-          source: "node_modules/three/examples/jsm/controls/OrbitControls.js"
-          target: "src/programs"
+          source: "~/node_modules/three/examples/jsm/controls/OrbitControls.js"
+          target: "~/src/programs"
 
       - name: copy file datgui
         uses: canastro/copy-file-action@master
         with:
-          source: "node_modules/three/examples/jsm/libs/dat.gui.module.js"
-          target: "src/programs"
+          source: "~/node_modules/three/examples/jsm/libs/dat.gui.module.js"
+          target: "~/src/programs"
 
       - run: pm2 start src/server.js --name node-app
 
